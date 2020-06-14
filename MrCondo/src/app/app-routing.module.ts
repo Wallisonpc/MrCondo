@@ -10,6 +10,22 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'signin-page',
+    loadChildren: () => import('./signin-page/signin-page.module').then( m => m.SigninPagePageModule)
+  },
+  {
+    path: 'signup-page',
+    loadChildren: () => import('./signup-page/signup-page.module').then( m => m.SignupPagePageModule)
+  },
+  {
+    path: 'resetpassword-page',
+    loadChildren: () => import('./resetpassword-page/resetpassword-page.module').then( m => m.ResetpasswordPagePageModule)
   }
 ];
 
